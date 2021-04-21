@@ -38,8 +38,9 @@ button .circle {
   height: 100px;
   background-color: #fff;
   position: absolute;
+  border-radius: 50%;
   transform: translate(-50px, -50px) scale(0);
-  animation: scale 1s ease-out;
+  animation: scale 0.5s ease-out;
 }
 
 @keyframes scale {
