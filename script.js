@@ -2,13 +2,12 @@ const buttons = document.querySelectorAll('#ripple');
 
 buttons.forEach((button) => {
   button.addEventListener('click', function (e) {
-    //to find position of X and Y in DOM
-    const clientX = e.clientX;
-    const clientY = e.clientY;
+    const clientX = e.clientX; //Get the horizontal coordinate of current window
+    const clientY = e.clientY; //Get the vertical coordinate  of current window
 
-    //to find the position of X and Y of the button
-    const buttonLeft = e.target.offsetLeft;
+    //get the position of the button
     const buttonTop = e.target.offsetTop;
+    const buttonLeft = e.target.offsetLeft;
 
     const innerX = clientX - buttonLeft;
     const innerY = clientY - buttonTop;
